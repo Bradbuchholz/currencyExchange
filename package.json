@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "currencyExchange",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,16 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CanadianRunner/template.git"
+    "url": "git+https://github.com/Bradbuchholz/template"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CanadianRunner/template/issues"
+    "url": "https://github.com/Bradbuchholz/template"
   },
-  "homepage": "https://github.com/CanadianRunner/template#readme",
+  "homepage": "https://github.com/Bradbuchholz/template",
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "dotenv-webpack": "^2.0.0",

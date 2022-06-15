@@ -1,16 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.slim.js"
-  integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
-  crossorigin="anonymous"></script>
-  <title></title>
+  <title>Weather</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>Convert your currency!</h1>
+    <label for="USD">Enter the amount of US Dollars to convert:</label>
+    <input id="USD" type="number">
+    <select class="form-select" id="exchCurr">
+      <option value="" disable hidden>Convert to:</option>
+      <option value="AED">UAE Dirham</option>
+      <option value="AFN">Afghan Afghani</option>
+      <option value="ALL">Albanian Lek</option>
+      <option value="AMD">Armenian Dram</option>
+      <option value="ANG">Netherlands Antillian Guilder</option> 
+    </select>
+    <button class="btn-success" id="exchange">exchange</button>
+    <div class="showErrors"></div>
+    <div class="showExchange"></div>
+  </div>
 </body>
 </html>
