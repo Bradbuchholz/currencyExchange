@@ -18,7 +18,7 @@ $(document).ready(function() {
     let promise = ExchangeService.getRate(amount, newAmount);
     promise.then(function(response) {
       const body = JSON.parse(response);
-      $('.showExchange').text();
+      $('.showExchange').text(`The exchange is ${body.conversion_result}`);
     }, function(error) {
       $('.showErrors').text(`There was an error processing your request: ${error}`);
     });
