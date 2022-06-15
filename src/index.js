@@ -13,6 +13,7 @@ function clearFields() {
 $(document).ready(function() {
   $('#exchange').click(function() {
     let amount = $('#USD').val();
+    let newAmount = $('#exchCurr').val();
     clearFields();
     let promise = ExchangeService.getRate(amount);
     promise.then(function(response) {
