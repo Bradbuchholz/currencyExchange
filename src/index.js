@@ -17,7 +17,7 @@ $(document).ready(function() {
     let promise = ExchangeService.getRate(amount);
     promise.then(function(response) {
       const body = JSON.parse(response);
-      $('.showExchange').text(`The temperature in Kelvins is ${body.main.temp} degrees.`);
+      $('.showExchange').text(`The exchange amout is${body.main.temp}.`);
     }, function(error) {
       $('.showErrors').text(`There was an error processing your request: ${error}`);
     });
