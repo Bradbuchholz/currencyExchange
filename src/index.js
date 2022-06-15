@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import ExchangeService from './js/exchangeService.js'
+import ExchangeService from './js/exchangeService.js';
 
 function clearFields() {
   $('#exchCurr').val("");
@@ -15,10 +15,10 @@ $(document).ready(function() {
     let amount = $('#USD').val();
     let newAmount = $('#exchCurr').val();
     clearFields();
-    let promise = ExchangeService.getRate(amount);
+    let promise = ExchangeService.getRate(amount, newAmount);
     promise.then(function(response) {
       const body = JSON.parse(response);
-      $('.showExchange').text(`The exchange amout is${response.conversion_rate}.`);
+      $('.showExchange').text();
     }, function(error) {
       $('.showErrors').text(`There was an error processing your request: ${error}`);
     });
