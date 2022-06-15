@@ -23,8 +23,8 @@ _For this section's project, you'll create a currency exchange application. A us
 ## Setup/Installation Requirements
 
 * _Must have a working internet connection and a web browser_
-* _go to https://www.exchangerate-api.com and apply for a free API key using your email address_
-* _Clone repository from GitHub to your desktop_
+* _Navigate to https://www.exchangerate-api.com and apply for a free API key using your email address_
+* _Clone repository from [GitHub](https://github.com/Bradbuchholz/currencyExchange.git) to your desktop_
 * _Create a .env file in the main directory to store your API key and enter this text: ``API_KEY=[your API key goes here]``_
 * _Open the directory in your terminal and run ``npm install``_
 * _Once that is complete, run ``npm run build``_
