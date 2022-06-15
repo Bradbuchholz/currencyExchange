@@ -23,7 +23,9 @@ _For this section's project, you'll create a currency exchange application. A us
 ## Setup/Installation Requirements
 
 * _Must have a working internet connection and a web browser_
+* _go to https://www.exchangerate-api.com and apply for a free API key using your email address_
 * _Clone repository from GitHub to your desktop_
+* _Create a .env file to store your API key and Label it ``API_KEY=[your API key goes here]``_
 * _Open the directory in your terminal and run ``npm install``_
 * _Once that is complete, run ``npm run build``_
 * _Live server view avaiable with ``npm run start``_
