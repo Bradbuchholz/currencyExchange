@@ -1,4 +1,4 @@
-export class ExchangeService {
+export default class ExchangeService {
   static getRate(amount) {
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
@@ -9,7 +9,7 @@ export class ExchangeService {
         } else {
           reject(request.response);
         }
-      }
+      };
       request.open("GET", url, true);
       request.send();
     });
