@@ -5,18 +5,18 @@
 <body>
   <div class="container">
     <h1>Convert your currency!</h1>
-    <label for="USD">Enter the amount of US Dollars to convert:</label>
-    <input id="USD" type="number">
-    <select class="form-select" id="exchCurr">
-      <option value="AED">UAE Dirham</option>
+    <label for="USD" class="form-label">Enter the amount of US Dollars to convert:</label>
+    <input id="USD" type="number" value="1" class="form-control mb-3">
+    <select class="form-select mb-3" id="exchCurr">
+      <option value="AED" selected>UAE Dirham</option>
       <option value="AFN">Afghan Afghani</option>
       <option value="ALL">Albanian Lek</option>
       <option value="AMD">Armenian Dram</option>
       <option value="ANG">Netherlands Antillian Guilder</option> 
     </select>
-    <button class="btn-success" id="exchange">exchange</button>
+    <button class="btn btn-success" id="exchange">exchange</button>
     <div class="showErrors"></div>
-    <div class="showExchange"></div>
+    <div class="showExchange mt-3 fs-3"></div>
   </div>
 </body>
 </html>

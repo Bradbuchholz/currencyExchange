@@ -1,8 +1,9 @@
 export default class ExchangeService {
-  static getRate(amount, newAmount) {
+  static getRate(amount, currencyType) {
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
-      const url = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/${amount}/${newAmount}/AMOUNT`;
+      console.log(process.env.API_KEY)
+      const url = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/USD/${currencyType}/${amount}`;
       request.onload = function() {
         if (this.status === 200) {
           resolve(request.response);
