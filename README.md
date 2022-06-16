@@ -33,8 +33,7 @@ _For this section's project, you'll create a currency exchange application. A us
 
 ## Known Bugs
 
-* _Application currently limited to only 5 currencies_
-* _API response is not generating the exchange_
+* _Application currently only exchanges from USD_
 
 ## License
 
